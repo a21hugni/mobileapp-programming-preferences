@@ -12,6 +12,9 @@ import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView text;
+    SharedPreferences preferences;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +23,24 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        text = findViewById(R.id.textMedLitetT);
+        preferences = getSharedPreferences("preferences", MODE_PRIVATE);
+        button = findViewById(R.id.brave);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        String name = preferences.getString("name", "inget namn hittades");
+        text.setText(name);
     }
 
 }
