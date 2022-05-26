@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@id/save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="Gå tillbaka till Gå"
+        android:text="Gå tillbaka"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

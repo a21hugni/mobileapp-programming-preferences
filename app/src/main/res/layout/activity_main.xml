@@ -28,7 +28,7 @@
 
     <Button
         android:id="@+id/brave"
-        android:text="Jag hade gjort det gör det"
+        android:text="Klicka!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -40,7 +40,7 @@
         android:id="@+id/textMedLitetT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vågar du klicka på knappen huh??"
+        android:text=""
         app:layout_constraintBottom_toTopOf="@+id/brave"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
